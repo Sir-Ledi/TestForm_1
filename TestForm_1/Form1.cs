@@ -21,5 +21,10 @@ namespace TestForm_1
         {
 
         }
+
+        private void btnAddClient_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Test run");
+        }
     }
 }
