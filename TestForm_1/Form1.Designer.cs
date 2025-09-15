@@ -38,6 +38,7 @@
             this.Client_Name = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabClients = new System.Windows.Forms.TabPage();
+            this.button1 = new System.Windows.Forms.Button();
             this.btnEditClient = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabPage3 = new System.Windows.Forms.TabPage();
@@ -111,11 +112,11 @@
             // 
             // Client_Name
             // 
-            this.Client_Name.Location = new System.Drawing.Point(251, 390);
+            this.Client_Name.Location = new System.Drawing.Point(487, 365);
             this.Client_Name.Name = "Client_Name";
-            this.Client_Name.Size = new System.Drawing.Size(75, 23);
+            this.Client_Name.Size = new System.Drawing.Size(121, 48);
             this.Client_Name.TabIndex = 3;
-            this.Client_Name.Text = "Client";
+            this.Client_Name.Text = "Clientele";
             this.Client_Name.UseVisualStyleBackColor = true;
             // 
             // tabControl1
@@ -132,6 +133,7 @@
             // 
             // tabClients
             // 
+            this.tabClients.Controls.Add(this.button1);
             this.tabClients.Controls.Add(this.btnEditClient);
             this.tabClients.Controls.Add(this.btnAddClient);
             this.tabClients.Controls.Add(this.dataGridView1);
@@ -144,15 +146,6 @@
             this.tabClients.TabIndex = 0;
             this.tabClients.Text = "Clients";
             this.tabClients.UseVisualStyleBackColor = true;
-            // 
-            // btnEditClient
-            // 
-            this.btnEditClient.Location = new System.Drawing.Point(242, 67);
-            this.btnEditClient.Name = "btnEditClient";
-            this.btnEditClient.Size = new System.Drawing.Size(130, 40);
-            this.btnEditClient.TabIndex = 4;
-            this.btnEditClient.Text = "Edit Client";
-            this.btnEditClient.UseVisualStyleBackColor = true;
             // 
             // tabPage2
             // 
@@ -204,6 +197,7 @@
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.Button btnEditClient;
+        private System.Windows.Forms.Button button1;
     }
 }
 
