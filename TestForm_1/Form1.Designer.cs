@@ -112,11 +112,11 @@
             // 
             // Client_Name
             // 
-            this.Client_Name.Location = new System.Drawing.Point(78, 432);
+            this.Client_Name.Location = new System.Drawing.Point(487, 365);
             this.Client_Name.Name = "Client_Name";
             this.Client_Name.Size = new System.Drawing.Size(121, 48);
             this.Client_Name.TabIndex = 3;
-            this.Client_Name.Text = "Client";
+            this.Client_Name.Text = "Clientele";
             this.Client_Name.UseVisualStyleBackColor = true;
             // 
             // tabControl1
@@ -149,9 +149,9 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(406, 343);
+            this.button1.Location = new System.Drawing.Point(459, 432);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(243, 106);
+            this.button1.Size = new System.Drawing.Size(158, 48);
             this.button1.TabIndex = 5;
             this.button1.Text = "Bonga is a fool!!";
             this.button1.UseVisualStyleBackColor = true;
