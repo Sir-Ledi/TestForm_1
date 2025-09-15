@@ -30,9 +30,12 @@
         {
             this.button1 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.ClientID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button2 = new System.Windows.Forms.Button();
+            this.Client_Name = new System.Windows.Forms.Button();
             this.Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColSurname = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ClientID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colCredit = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -42,29 +45,42 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
+            this.button1.Text = "PetName";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ClientID,
             this.Name,
-            this.ColSurname});
+            this.ColSurname,
+            this.ClientID,
+            this.colCredit});
             this.dataGridView1.Location = new System.Drawing.Point(128, 213);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(512, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(571, 150);
             this.dataGridView1.TabIndex = 1;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // ClientID
+            // button2
             // 
-            this.ClientID.HeaderText = "ID";
-            this.ClientID.MinimumWidth = 6;
-            this.ClientID.Name = "ClientID";
-            this.ClientID.Width = 125;
+            this.button2.Location = new System.Drawing.Point(189, 81);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 2;
+            this.button2.Text = "Add";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // Client_Name
+            // 
+            this.Client_Name.Location = new System.Drawing.Point(218, 388);
+            this.Client_Name.Name = "Client_Name";
+            this.Client_Name.Size = new System.Drawing.Size(75, 23);
+            this.Client_Name.TabIndex = 3;
+            this.Client_Name.Text = "Client";
+            this.Client_Name.UseVisualStyleBackColor = true;
             // 
             // Name
             // 
@@ -80,11 +96,27 @@
             this.ColSurname.Name = "ColSurname";
             this.ColSurname.Width = 125;
             // 
+            // ClientID
+            // 
+            this.ClientID.HeaderText = "ID";
+            this.ClientID.MinimumWidth = 6;
+            this.ClientID.Name = "ClientID";
+            this.ClientID.Width = 125;
+            // 
+            // colCredit
+            // 
+            this.colCredit.HeaderText = "Credit Limit";
+            this.colCredit.MinimumWidth = 6;
+            this.colCredit.Name = "colCredit";
+            this.colCredit.Width = 125;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Client_Name);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button1);
             this.Name = "Form1";
@@ -98,9 +130,12 @@
 
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ClientID;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button Client_Name;
         private System.Windows.Forms.DataGridViewTextBoxColumn Name;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColSurname;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ClientID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colCredit;
     }
 }
 
