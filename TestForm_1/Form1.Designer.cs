@@ -38,10 +38,10 @@
             this.Client_Name = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabClients = new System.Windows.Forms.TabPage();
+            this.button1 = new System.Windows.Forms.Button();
             this.btnEditClient = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabClients.SuspendLayout();
@@ -108,12 +108,13 @@
             this.btnAddClient.TabIndex = 2;
             this.btnAddClient.Text = "Add Client";
             this.btnAddClient.UseVisualStyleBackColor = true;
+            this.btnAddClient.Click += new System.EventHandler(this.btnAddClient_Click);
             // 
             // Client_Name
             // 
-            this.Client_Name.Location = new System.Drawing.Point(251, 390);
+            this.Client_Name.Location = new System.Drawing.Point(78, 432);
             this.Client_Name.Name = "Client_Name";
-            this.Client_Name.Size = new System.Drawing.Size(75, 23);
+            this.Client_Name.Size = new System.Drawing.Size(121, 48);
             this.Client_Name.TabIndex = 3;
             this.Client_Name.Text = "Client";
             this.Client_Name.UseVisualStyleBackColor = true;
@@ -146,6 +147,15 @@
             this.tabClients.Text = "Clients";
             this.tabClients.UseVisualStyleBackColor = true;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(390, 390);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(243, 106);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "Bonga is a fool!!";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // btnEditClient
             // 
             this.btnEditClient.Location = new System.Drawing.Point(242, 67);
@@ -174,15 +184,6 @@
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Appointments";
             this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(105, 28);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(165, 33);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Bonga is a fool!!";
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
