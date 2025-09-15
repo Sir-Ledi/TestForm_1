@@ -37,16 +37,18 @@
             this.button2 = new System.Windows.Forms.Button();
             this.Client_Name = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tabClients = new System.Windows.Forms.TabPage();
+            this.tabPets = new System.Windows.Forms.TabPage();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabControl1.SuspendLayout();
-            this.tabPage1.SuspendLayout();
+            this.tabClients.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(138, 6);
+            this.button1.Location = new System.Drawing.Point(124, 356);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 0;
@@ -99,7 +101,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(28, 6);
+            this.button2.Location = new System.Drawing.Point(124, 79);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 2;
@@ -108,7 +110,7 @@
             // 
             // Client_Name
             // 
-            this.Client_Name.Location = new System.Drawing.Point(242, 6);
+            this.Client_Name.Location = new System.Drawing.Point(30, 35);
             this.Client_Name.Name = "Client_Name";
             this.Client_Name.Size = new System.Drawing.Size(75, 23);
             this.Client_Name.TabIndex = 3;
@@ -117,37 +119,57 @@
             // 
             // tabControl1
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabClients);
+            this.tabControl1.Controls.Add(this.tabPets);
             this.tabControl1.Location = new System.Drawing.Point(3, 4);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(795, 444);
             this.tabControl1.TabIndex = 4;
             // 
-            // tabPage1
+            // tabClients
             // 
-            this.tabPage1.Controls.Add(this.button2);
-            this.tabPage1.Controls.Add(this.dataGridView1);
-            this.tabPage1.Controls.Add(this.Client_Name);
-            this.tabPage1.Controls.Add(this.button1);
-            this.tabPage1.Location = new System.Drawing.Point(4, 25);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(787, 415);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "tabPage1";
-            this.tabPage1.UseVisualStyleBackColor = true;
+            this.tabClients.Controls.Add(this.button4);
+            this.tabClients.Controls.Add(this.button3);
+            this.tabClients.Controls.Add(this.button2);
+            this.tabClients.Controls.Add(this.dataGridView1);
+            this.tabClients.Controls.Add(this.Client_Name);
+            this.tabClients.Controls.Add(this.button1);
+            this.tabClients.Location = new System.Drawing.Point(4, 25);
+            this.tabClients.Name = "tabClients";
+            this.tabClients.Padding = new System.Windows.Forms.Padding(3);
+            this.tabClients.Size = new System.Drawing.Size(787, 415);
+            this.tabClients.TabIndex = 0;
+            this.tabClients.Text = "Clients";
+            this.tabClients.UseVisualStyleBackColor = true;
             // 
-            // tabPage2
+            // tabPets
             // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 25);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(192, 71);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.tabPets.Location = new System.Drawing.Point(4, 25);
+            this.tabPets.Name = "tabPets";
+            this.tabPets.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPets.Size = new System.Drawing.Size(787, 415);
+            this.tabPets.TabIndex = 1;
+            this.tabPets.Text = "Pets";
+            this.tabPets.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(294, 78);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 4;
+            this.button3.Text = "Edit";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(578, 78);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.TabIndex = 5;
+            this.button4.Text = "Delete";
+            this.button4.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -159,7 +181,7 @@
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.tabControl1.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
+            this.tabClients.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -175,8 +197,10 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ClientID;
         private System.Windows.Forms.DataGridViewTextBoxColumn colCredit;
         private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TabPage tabClients;
+        private System.Windows.Forms.TabPage tabPets;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button3;
     }
 }
 
