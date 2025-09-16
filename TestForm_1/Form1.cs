@@ -36,5 +36,10 @@ namespace TestForm_1
 		{
 
 		}
+
+		private void btnAdd_Click(object sender, EventArgs e)
+		{
+            MessageBox.Show("Add button clicked");
+		}
 	}
 }

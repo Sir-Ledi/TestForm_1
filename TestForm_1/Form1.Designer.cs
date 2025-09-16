@@ -41,15 +41,15 @@
 			this.button1 = new System.Windows.Forms.Button();
 			this.btnEditClient = new System.Windows.Forms.Button();
 			this.tabPage2 = new System.Windows.Forms.TabPage();
-			this.tabPage3 = new System.Windows.Forms.TabPage();
-			this.btnEditPet = new System.Windows.Forms.Button();
-			this.btnDeletePet = new System.Windows.Forms.Button();
-			this.btnAdd = new System.Windows.Forms.Button();
 			this.dataGridView2 = new System.Windows.Forms.DataGridView();
 			this.colName = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.colAge = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.colType = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.colOwnerID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.btnAdd = new System.Windows.Forms.Button();
+			this.btnDeletePet = new System.Windows.Forms.Button();
+			this.btnEditPet = new System.Windows.Forms.Button();
+			this.tabPage3 = new System.Windows.Forms.TabPage();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
 			this.tabControl1.SuspendLayout();
 			this.tabClients.SuspendLayout();
@@ -59,7 +59,7 @@
 			// 
 			// btnDeleteClient
 			// 
-			this.btnDeleteClient.Location = new System.Drawing.Point(459, 67);
+			this.btnDeleteClient.Location = new System.Drawing.Point(402, 67);
 			this.btnDeleteClient.Name = "btnDeleteClient";
 			this.btnDeleteClient.Size = new System.Drawing.Size(130, 40);
 			this.btnDeleteClient.TabIndex = 0;
@@ -160,7 +160,7 @@
 			// 
 			// button1
 			// 
-			this.button1.Location = new System.Drawing.Point(0, 0);
+			this.button1.Location = new System.Drawing.Point(8, 3);
 			this.button1.Name = "button1";
 			this.button1.Size = new System.Drawing.Size(75, 23);
 			this.button1.TabIndex = 0;
@@ -185,43 +185,6 @@
 			this.tabPage2.TabIndex = 1;
 			this.tabPage2.Text = "Pets";
 			this.tabPage2.UseVisualStyleBackColor = true;
-			// 
-			// tabPage3
-			// 
-			this.tabPage3.Location = new System.Drawing.Point(4, 25);
-			this.tabPage3.Name = "tabPage3";
-			this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-			this.tabPage3.Size = new System.Drawing.Size(920, 522);
-			this.tabPage3.TabIndex = 2;
-			this.tabPage3.Text = "Appointments";
-			this.tabPage3.UseVisualStyleBackColor = true;
-			// 
-			// btnEditPet
-			// 
-			this.btnEditPet.Location = new System.Drawing.Point(418, 34);
-			this.btnEditPet.Name = "btnEditPet";
-			this.btnEditPet.Size = new System.Drawing.Size(75, 23);
-			this.btnEditPet.TabIndex = 0;
-			this.btnEditPet.Text = "Edit Pet";
-			this.btnEditPet.UseVisualStyleBackColor = true;
-			// 
-			// btnDeletePet
-			// 
-			this.btnDeletePet.Location = new System.Drawing.Point(632, 34);
-			this.btnDeletePet.Name = "btnDeletePet";
-			this.btnDeletePet.Size = new System.Drawing.Size(115, 23);
-			this.btnDeletePet.TabIndex = 1;
-			this.btnDeletePet.Text = "Delete Pet";
-			this.btnDeletePet.UseVisualStyleBackColor = true;
-			// 
-			// btnAdd
-			// 
-			this.btnAdd.Location = new System.Drawing.Point(187, 34);
-			this.btnAdd.Name = "btnAdd";
-			this.btnAdd.Size = new System.Drawing.Size(75, 23);
-			this.btnAdd.TabIndex = 2;
-			this.btnAdd.Text = "Add";
-			this.btnAdd.UseVisualStyleBackColor = true;
 			// 
 			// dataGridView2
 			// 
@@ -267,6 +230,44 @@
 			this.colOwnerID.Name = "colOwnerID";
 			this.colOwnerID.Width = 125;
 			// 
+			// btnAdd
+			// 
+			this.btnAdd.Location = new System.Drawing.Point(187, 34);
+			this.btnAdd.Name = "btnAdd";
+			this.btnAdd.Size = new System.Drawing.Size(75, 23);
+			this.btnAdd.TabIndex = 2;
+			this.btnAdd.Text = "Add";
+			this.btnAdd.UseVisualStyleBackColor = true;
+			this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+			// 
+			// btnDeletePet
+			// 
+			this.btnDeletePet.Location = new System.Drawing.Point(632, 34);
+			this.btnDeletePet.Name = "btnDeletePet";
+			this.btnDeletePet.Size = new System.Drawing.Size(115, 23);
+			this.btnDeletePet.TabIndex = 1;
+			this.btnDeletePet.Text = "Delete Pet";
+			this.btnDeletePet.UseVisualStyleBackColor = true;
+			// 
+			// btnEditPet
+			// 
+			this.btnEditPet.Location = new System.Drawing.Point(418, 34);
+			this.btnEditPet.Name = "btnEditPet";
+			this.btnEditPet.Size = new System.Drawing.Size(75, 23);
+			this.btnEditPet.TabIndex = 0;
+			this.btnEditPet.Text = "Edit Pet";
+			this.btnEditPet.UseVisualStyleBackColor = true;
+			// 
+			// tabPage3
+			// 
+			this.tabPage3.Location = new System.Drawing.Point(4, 25);
+			this.tabPage3.Name = "tabPage3";
+			this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+			this.tabPage3.Size = new System.Drawing.Size(920, 522);
+			this.tabPage3.TabIndex = 2;
+			this.tabPage3.Text = "Appointments";
+			this.tabPage3.UseVisualStyleBackColor = true;
+			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -300,6 +301,7 @@
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.Button btnEditClient;
         private System.Windows.Forms.Button button1;
+<<<<<<< HEAD
 		private System.Windows.Forms.DataGridView dataGridView2;
 		private System.Windows.Forms.Button btnAdd;
 		private System.Windows.Forms.Button btnDeletePet;
@@ -309,5 +311,9 @@
 		private System.Windows.Forms.DataGridViewTextBoxColumn colType;
 		private System.Windows.Forms.DataGridViewTextBoxColumn colOwnerID;
 	}
+=======
+        private System.Windows.Forms.Button btnEdit;
+    }
+>>>>>>> e3d44471d70604b43f53cb969f8a19fecb3ca3e2
 }
 
