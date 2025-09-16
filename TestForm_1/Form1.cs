@@ -26,5 +26,15 @@ namespace TestForm_1
         {
             MessageBox.Show("Test run");
         }
-    }
+
+		private void Client_Name_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+		{
+
+		}
+	}
 }
