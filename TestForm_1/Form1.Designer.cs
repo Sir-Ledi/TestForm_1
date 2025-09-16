@@ -50,6 +50,7 @@
 			this.btnDeletePet = new System.Windows.Forms.Button();
 			this.btnEditPet = new System.Windows.Forms.Button();
 			this.tabPage3 = new System.Windows.Forms.TabPage();
+			this.button2 = new System.Windows.Forms.Button();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
 			this.tabControl1.SuspendLayout();
 			this.tabClients.SuspendLayout();
@@ -174,6 +175,7 @@
 			// 
 			// tabPage2
 			// 
+			this.tabPage2.Controls.Add(this.button2);
 			this.tabPage2.Controls.Add(this.dataGridView2);
 			this.tabPage2.Controls.Add(this.btnAdd);
 			this.tabPage2.Controls.Add(this.btnDeletePet);
@@ -268,6 +270,15 @@
 			this.tabPage3.Text = "Appointments";
 			this.tabPage3.UseVisualStyleBackColor = true;
 			// 
+			// button2
+			// 
+			this.button2.Location = new System.Drawing.Point(361, 310);
+			this.button2.Name = "button2";
+			this.button2.Size = new System.Drawing.Size(75, 23);
+			this.button2.TabIndex = 4;
+			this.button2.Text = "Hello Naledi";
+			this.button2.UseVisualStyleBackColor = true;
+			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -310,6 +321,7 @@
 		private System.Windows.Forms.DataGridViewTextBoxColumn colAge;
 		private System.Windows.Forms.DataGridViewTextBoxColumn colType;
 		private System.Windows.Forms.DataGridViewTextBoxColumn colOwnerID;
+		private System.Windows.Forms.Button button2;
 	}
 =======
         private System.Windows.Forms.Button btnEdit;
