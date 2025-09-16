@@ -42,6 +42,7 @@
             this.btnEditClient = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.btnEdit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabClients.SuspendLayout();
@@ -49,7 +50,7 @@
             // 
             // btnDeleteClient
             // 
-            this.btnDeleteClient.Location = new System.Drawing.Point(459, 67);
+            this.btnDeleteClient.Location = new System.Drawing.Point(402, 67);
             this.btnDeleteClient.Name = "btnDeleteClient";
             this.btnDeleteClient.Size = new System.Drawing.Size(130, 40);
             this.btnDeleteClient.TabIndex = 0;
@@ -133,6 +134,7 @@
             // 
             // tabClients
             // 
+            this.tabClients.Controls.Add(this.btnEdit);
             this.tabClients.Controls.Add(this.button1);
             this.tabClients.Controls.Add(this.btnEditClient);
             this.tabClients.Controls.Add(this.btnAddClient);
@@ -146,6 +148,20 @@
             this.tabClients.TabIndex = 0;
             this.tabClients.Text = "Clients";
             this.tabClients.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(0, 0);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 0;
+            // 
+            // btnEditClient
+            // 
+            this.btnEditClient.Location = new System.Drawing.Point(0, 0);
+            this.btnEditClient.Name = "btnEditClient";
+            this.btnEditClient.Size = new System.Drawing.Size(75, 23);
+            this.btnEditClient.TabIndex = 1;
             // 
             // tabPage2
             // 
@@ -166,6 +182,15 @@
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Appointments";
             this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // btnEdit
+            // 
+            this.btnEdit.Location = new System.Drawing.Point(233, 67);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Size = new System.Drawing.Size(117, 40);
+            this.btnEdit.TabIndex = 4;
+            this.btnEdit.Text = "Edit Client";
+            this.btnEdit.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -198,6 +223,7 @@
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.Button btnEditClient;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnEdit;
     }
 }
 
